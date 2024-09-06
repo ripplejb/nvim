@@ -4,8 +4,31 @@ pcall(function()
 end)
 
 local options = {
-  ensure_installed = { "lua", "luadoc", "printf", "vim", "vimdoc", "python", "javascript", "typescript", "tsx", "css", "html" },
-
+  ensure_installed = {
+        'markdown',
+        'markdown_inline',
+        'tsx',
+        'typescript',
+        'php',
+        'json',
+        'yaml',
+        'css',
+        'scss',
+        'html',
+        'javascript',
+        'lua',
+        'luadoc',
+        'vim',
+        'vimdoc',
+        'jsdoc',
+        'graphql',
+        'bash',
+        'prisma',
+        'svelte',
+        'sql',
+        'regex',
+        'latex',
+      },
   highlight = {
     enable = true,
     use_languagetree = true,
