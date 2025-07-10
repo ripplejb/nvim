@@ -3,13 +3,16 @@
 ## Prerequisites
 
 Dear friend,
-before you begin,
-please ensure you have the following prerequisites installed:
+Before you begin,
+Please ensure you have the following prerequisites installed:
 
 - git
 - lazygit
 - ripgrep
 - fd
+- fzf
+- nodejs [If you don't want node support, remove the plugins]
+- golang [If you don't want golang support, remove the plugins]
 
 A starter template for [LazyVim](https://github.com/LazyVim/LazyVim).
-Refer to the [documentation](https://lazyvim.github.io/installation) to get started.
+Please review the [documentation](https://lazyvim.github.io/installation) to get started.
