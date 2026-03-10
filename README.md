@@ -13,6 +13,7 @@ Please ensure you have the following prerequisites installed:
 - fzf
 - nodejs [If you don't want node support, remove the plugins]
 - golang [If you don't want golang support, remove the plugins]
+- unzip
 
 **To set up clipboard, please set up appropriate clipboard tool for your OS:**
 
