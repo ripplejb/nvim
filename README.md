@@ -11,8 +11,10 @@ Please ensure you have the following prerequisites installed:
 - ripgrep
 - fd
 - fzf
-- nodejs [If you don't want node support, remove the plugins]
-- golang [If you don't want golang support, remove the plugins]
+- dotnet [If you don't want dotnet support, remove the plugin]
+- nodejs [If you don't want node support, remove the plugin]
+- python [If you don't want python support, remove the plugin]
+- golang [If you don't want golang support, remove the plugin]
 - unzip
 
 **To set up clipboard, please set up appropriate clipboard tool for your OS:**
