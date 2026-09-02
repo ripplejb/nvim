@@ -1,3 +1,5 @@
+-- Use the settings below for .Net project.
+
 return {
   -- 1. Forcefully disable omnisharp to favor roslyn
   {
@@ -9,12 +11,13 @@ return {
     },
   },
 
-  -- 2. Add the custom Mason registry so Mason can find the "roslyn" package
+  -- 2. FIXED: Use the correct community Mason registry repository string
   {
     "williamboman/mason.nvim",
     opts = function(_, opts)
       opts.registries = opts.registries or { "github:mason-org/mason-registry" }
-      table.insert(opts.registries, 1, "github:seblyng/mason-roslyn")
+      -- Inserts the correct Crashdummyy registry at the front
+      table.insert(opts.registries, 1, "github:Crashdummyy/mason-registry")
     end,
   },
 
@@ -31,7 +34,6 @@ return {
       require("roslyn").setup({
         args = {
           "--logLevel=Information",
-          -- MODERN FIX: Uses the updated 0.12+ non-deprecated logging API
           "--extensionLogDirectory=" .. vim.fs.dirname(vim.lsp.log.get_filename()),
         },
         config = {
