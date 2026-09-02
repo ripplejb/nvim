@@ -13,7 +13,7 @@ return {
 
   -- 2. FIXED: Use the correct community Mason registry repository string
   {
-    "williamboman/mason.nvim",
+    "mason-org/mason.nvim",
     opts = function(_, opts)
       opts.registries = opts.registries or { "github:mason-org/mason-registry" }
       -- Inserts the correct Crashdummyy registry at the front
@@ -26,7 +26,7 @@ return {
     "seblyng/roslyn.nvim",
     ft = { "cs", "razor" },
     dependencies = {
-      { "williamboman/mason.nvim" },
+      { "mason-org/mason.nvim" },
     },
     config = function()
       local capabilities = require("cmp_nvim_lsp").default_capabilities()
