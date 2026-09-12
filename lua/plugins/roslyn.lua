@@ -34,7 +34,7 @@ return {
       require("roslyn").setup({
         args = {
           "--logLevel=Information",
-          "--extensionLogDirectory=" .. vim.fs.dirname(vim.lsp.get_filename()),
+          "--extensionLogDirectory=" .. vim.fs.dirname(vim.lsp.log.get_filename()),
         },
         config = {
           capabilities = capabilities,
