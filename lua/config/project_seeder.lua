@@ -3,7 +3,9 @@ local M = {}
 -- Map file types to their respective project root markers and template names
 local language_configs = {
   cs = {
-    markers = { "*.sln", "*.csproj", ".git" },
+    markers = function(name, _)
+      return name:match("%.sln$") ~= nil or name:match("%.csproj$") ~= nil or name == ".git"
+    end,
     template_name = "csharp.editorconfig",
     lsp_service = "roslyn",
   },
