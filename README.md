@@ -16,6 +16,7 @@ Please ensure you have the following prerequisites installed:
 - python [If you don't want python support, remove the plugin]
 - golang [If you don't want golang support, remove the plugin]
 - unzip
+- 7zip
 
 **To set up clipboard, please set up appropriate clipboard tool for your OS:**
 
